@@ -1,0 +1,84 @@
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  background:url(./images/pexels-negative-space-34577.jpg) no-repeat center center/cover;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -12;
+    opacity:220;
+}
+.form .moreinfo {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 210px;
+  bottom: 0;
+  left: 0;
+  padding: 285px 1.8em 2em;
+  background-color: #f2f2f2;
+  border-radius: .25em 0 0 .25em;
+}
+.form .moreinfo p {
+  font-size: 1.3rem;
+  color: black;
+  line-height: 1.6;
+}
+.form form {
+  padding-top: 90px;
+  height: 100%;
+  overflow: hidden;
+}
+.form fieldset:last-of-type > div {
+  padding-top: 0;
+}
+.form legend {
+  width: 100%;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #e5e5e5;
+  color: black;
+}
+.form input[type="radio"],
+.form label {
+  cursor: pointer;
+}
+.form label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+}
+.form input[type="radio"] + label {
+  color: black;
+}
+a {
+  color: #95ac5f;
+  text-decoration: none;
+}
+.form .cd-plan-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+  color: black;
+}
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form select:focus {
+  outline: none;
+  border-color: #95ac5f;
+}
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+#SERVICES input[type="Get started"]:hover {
+  background: black;
+  color: white;
+}

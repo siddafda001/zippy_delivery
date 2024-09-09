@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<script>
+	    function Google()
+			{
+	        var fname = document.forms["pay"]["userName"];
+		var password = document.forms["pay"]["userPassword"];
+		var rpassword = document.forms["pay"]["userPasswordRepeat"]; 
+	        
+	        var what = document.forms["pay"]["card-expiry-month"];
+		var what2 = document.forms["pay"]["card-expiry-year"];
+	        var address = document.forms["pay"]["Address"];
+
+					if (fname.value == "")
+					{
+            window.alert("Please enter your name.");
+            name.focus();
+            return false;
+          }
+					
+					if (password.value == "") {
+            window.alert(
+              "Please enter correct password.");
+            password.focus();
+            return false;
+
+          }
+					if (rpassword.value == "") {
+            window.alert(
+              "Please enter correct password.");
+            rpassword.focus();
+            return false;
+
+          }
+
+					if (what.selectedIndex < 1)
+					{
+            alert("Please select card-expiry-month.");
+            what.focus();
+            return false;
+          }
+					if (what2.selectedIndex < 1)
+					{
+            alert("Please select card-expiry-year.");
+            what2.focus();
+            return false;
+          }
+
+					return true;
+     }
+	</script>
+</head>
+<body>
+	
+<div class="form">
+		
+		<div class="cd-plan-info">
+			
+		</div>
+<section id="SERVICES">
+
+<form name="pay" autocomplete="on" onsubmit="return Google()" method="post">
+   <fieldset>
+	<legend><b>Account Info</b></legend>			
+<div class="half-width">
+<label for="userName"><b>Name</b></label>
+<input type="text" id="userName" name="userName">
+</div>
+				
+	<div class="half-width">
+	<label for="userEmail"><b>Email</b></label>
+	<input type="email" id="userEmail" name="userEmail">
+	</div>
+	<div class="half-width">
+<label for="userPassword"><b>Password</b></label>
+	<input type="password" id="userPassword" name="userPassword">
+</div>
+				
+<div class="half-width">
+	<label for="userPasswordRepeat"><b>Repeat Password<b></label>
+	<input type="password" id="userPasswordRepeat" name="userPasswordRepeat">
+</div>
+	</fieldset>
+
+<fieldset>
+	<legend><b>Payment Method</b></legend>
+				
+<div>
+	<ul class="cd-payment-gateways">
+		<li>
+<input type="radio" name="payment-method" id="paypal" value="paypal">
+	<label for="paypal"><b>Paypal</b></label>
+		</li>
+						
+	<li>
+<input type="radio" name="payment-method" id="card" value="card" checked>
+	<label for="card"><b>Card</b></label>
+</li>
+	</ul> 
+	</div>
+				
+<div class="cd-credit-card">
+<div>
+<p class="half-width">
+<label for="cardNumber"><b>Card Number</b></label>
+<input type="number" id="cardNumber" name="cardNumber">
+</p>
+
+		<p class="half-width">
+			<label><b>Expiration date</b></label>
+	<b>
+<span class="cd-select">
+<select name="card-expiry-month" id="card-expiry-month">
+	<option value="1">1</option>
+		<option value="1">2</option>
+		<option value="1">3</option>
+		<option value="1">4</option>
+		<option value="1">5</option>
+		<option value="1">6</option>
+		<option value="1">7</option>
+		<option value="1">8</option>
+		<option value="1">9</option>
+		<option value="1">10</option>
+		<option value="1">11</option>
+		<option value="1">12</option>
+</select>
+</span>
+
+<span class="cd-select">
+<select name="card-expiry-year" id="card-expiry-year">
+		<option value="2015">2015</option>
+		<option value="2015">2016</option>
+		<option value="2015">2017</option>
+		<option value="2015">2018</option>
+		<option value="2015">2019</option>
+		<option value="2015">2020</option>
+		</select>
+		</span>
+		</b>
+		</p>
+						
+	<p class="half-width">
+	<label for="cardCvc"><b>Card CVC</b></label>
+	<input type="number" id="cardCvc" name="cardCvc">
+	</p>
+					</div>
+	</div>
+	</fieldset>
+			
+	<fieldset>
+<div>
+	<input type="submit" value="Get started">
+</div>
+</fieldset>
+</form></section>
+<a href="#0" class="cd-close"></a>
+	</div>
+</body>
+</html>

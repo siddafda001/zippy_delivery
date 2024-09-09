@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+}
+/* Logo and image */
+#logo{
+      margin: 24px 40px;
+}
+#logo img{
+    margin: 6px 4px;
+    height:56px;
+}
+
+/* list styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.125;
+    
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:black;
+    display:block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    color:white;
+    background-color:black;
+}
+/* SERVICES section */
+#SERVICES{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+}
+#SERVICES::before{
+    content:"";
+    /* background:url(./images/pexels-ella-olsson-1640773.jpg) no-repeat center center/cover; */
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.70;
+
+}
+.head{
+    font-size: 2.8rem;
+    padding 4px;
+    color : black;
+}
+#box1{
+    display:flex;
+    background-color:white;
+    border:2px solid black;
+    border-radius: 64px;
+    height:50px;
+    width: 50px;
+    position: fixed;
+    right:5px;
+    bottom:32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+#btn{
+    border-radius: 32px;
+    padding:16px 20px;
+    background-color:white;
+    font-size: 1.2rem;
+    font-weight:bolder;
+}
+#btn:hover{
+    color:white;
+    background-color: black;
+}
+
+.a4{
+	max-width: 550px;
+	
+}
+.a4 label{
+	display:block;
+	margin-bottom: 10px;
+}
+.a4 label > span{
+	width: 100px;
+	color: #F072A9;
+
+}
+.a4 fieldset{
+	border-radius: 10px;
+	border: 1px
+	padding: 30px;
+	
+}
+.a4 textarea{
+	width:250px;
+	height:100px;
+}
+.a4 input[type=text],
+.a4 input[type=number],
+.a4 input[type=email], 
+.a4 textarea{
+	border-radius: 3px;
+	border: 1px
+	color: #F072A9;
+	padding: 10px 103px 2px 16px;
+	width:50%;
+}
+#b{
+    
+    cursor:pointer;
+}
+.a4  input[type=submit],
+.a4  input[type=button]{
+	border: 1px solid black;
+	padding: 5px 15px 5px 15px;
+	color:black;
+	border-radius: 3px;	
+	font-weight: bold;
+}
+#SERVICES input[type="submit"] {
+  background: transparent;
+  border: 3px solid black ;
+  border-radius: 20px;
+  padding: 3px 22px;
+  letter-spacing: 4px;
+  margin-top: 14px;
+  display:block;
+  margin:auto;
+  height: 55px;
+  text-decoration: none;
+}
+#SERVICES input[type="submit"]:hover {
+  background: black;
+  color: white;
+}
+body{
+    background: url(./images/pexels-jéshoots-4831.jpg)  no-repeat center center/cover; 
+    
+}
+
